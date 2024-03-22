@@ -121,7 +121,7 @@ class Xml extends Component
         }
 
         $items_xml = $this->items($order_xml, $order->getLineItems());
-        $this->discount($items_xml, $order);
+        //$this->discount($items_xml, $order);
 
         $customer = $order->getCustomer();
         $customer_xml = $this->customer($order_xml, $customer);
